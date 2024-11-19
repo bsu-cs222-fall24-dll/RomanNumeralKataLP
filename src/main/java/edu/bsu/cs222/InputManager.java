@@ -38,4 +38,8 @@ public class InputManager {
         }
         return romanNumeral;
     }
+    public String intToRomanX(int numInput){
+        String romanNumeral = "";
+        return romanNumeral;
+    }
 }

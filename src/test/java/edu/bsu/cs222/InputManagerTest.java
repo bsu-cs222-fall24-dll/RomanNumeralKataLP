@@ -32,4 +32,15 @@ public class InputManagerTest {
         String testResult = converter.intToRomanV(testNumber);
         assertEquals(expected,testResult);
     }
+
+    @Test
+    //Tests integer inputs that use the Roman numeral 'X' (9 to 39).
+    public void intToRomanTestStage3() {
+        int testNumber = 9;
+        String expected = "IX";
+
+        InputManager converter = new InputManager();
+        String testResult = converter.intToRomanX(testNumber);
+        assertEquals(expected,testResult);
+    }
 }
