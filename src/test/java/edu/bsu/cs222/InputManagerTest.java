@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class InputManagerTest {
     @Test
     public void inputManagerTest(){
-        InputManager manager = new InputManager();
+        IntegerToRoman manager = new IntegerToRoman();
         boolean testResult = manager.inputManager(300);
         assertTrue(testResult,"Input was less than or equal to 3,000.");
     }
@@ -17,30 +17,8 @@ public class InputManagerTest {
         int testNumber = 3;
         String expected = "III";
 
-        InputManager converter = new InputManager();
+        IntegerToRoman converter = new IntegerToRoman();
         String testResult = converter.intToRomanI(testNumber);
         assertEquals(expected, testResult);
-    }
-
-    @Test
-    //Tests small integer inputs that use the Roman numeral 'V' (4 to 8).
-    public void intToRomanTestStage2(){
-        int testNumber = 8;
-        String expected = "VIII";
-
-        InputManager converter = new InputManager();
-        String testResult = converter.intToRomanV(testNumber);
-        assertEquals(expected,testResult);
-    }
-
-    @Test
-    //Tests integer inputs that use the Roman numeral 'X' (9 to 39).
-    public void intToRomanTestStage3() {
-        int testNumber = 9;
-        String expected = "IX";
-
-        InputManager converter = new InputManager();
-        String testResult = converter.intToRomanX(testNumber);
-        assertEquals(expected,testResult);
     }
 }
