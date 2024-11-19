@@ -8,11 +8,32 @@ public class InputManager {
         }
         return false;
     }
-    public String intToRoman(int numInput){
+    public String intToRomanI(int numInput){
        String romanNumeral = "";
         if (numInput <= 3){
             for (int i = 0; i <= numInput - 1; i++){
                 romanNumeral += "I";
+            }
+        }
+        return romanNumeral;
+    }
+
+    public String intToRomanV(int numInput){
+        String romanNumeral = "";
+        if ((numInput >= 4) && (numInput <= 8)) {
+            if (numInput == 5) {
+                romanNumeral += "V";
+            }
+            else {
+                if (numInput == 4){
+                    romanNumeral += "IV";
+                }
+                else{
+                    romanNumeral += "V";
+                    for (int i = 5; i <= numInput - 1; i++){
+                        romanNumeral += "I";
+                    }
+                }
             }
         }
         return romanNumeral;

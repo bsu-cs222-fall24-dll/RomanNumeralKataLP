@@ -18,18 +18,18 @@ public class InputManagerTest {
         String expected = "III";
 
         InputManager converter = new InputManager();
-        String testResult = converter.intToRoman(testNumber);
+        String testResult = converter.intToRomanI(testNumber);
         assertEquals(expected, testResult);
     }
 
     @Test
     //Tests small integer inputs that use the Roman numeral 'V' (4 to 8).
     public void intToRomanTestStage2(){
-        int testNumber = 5;
-        String expected = "V";
+        int testNumber = 8;
+        String expected = "VIII";
 
         InputManager converter = new InputManager();
-        String testResult = converter.intToRoman(testNumber);
+        String testResult = converter.intToRomanV(testNumber);
         assertEquals(expected,testResult);
     }
 }
