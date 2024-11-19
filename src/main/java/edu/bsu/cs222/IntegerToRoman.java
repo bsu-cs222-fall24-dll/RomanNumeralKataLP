@@ -8,8 +8,21 @@ public class IntegerToRoman {
         return false;
     }
 
+    public String intToRomanV(int numInput){
+        String romanNumeral = "";
+        while(numInput >= 5){
+            romanNumeral += "V";
+            numInput -= 5;
+        }
+        return romanNumeral;
+    }
+
     public String intToRomanI(int numInput) {
         String romanNumeral = "";
+        if(numInput == 4){
+            romanNumeral += "IV";
+            numInput -= 4;
+        }
         while(numInput >= 1){
             romanNumeral += "I";
             numInput -= 1;

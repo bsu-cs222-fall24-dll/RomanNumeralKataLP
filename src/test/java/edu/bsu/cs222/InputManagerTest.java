@@ -12,13 +12,23 @@ public class InputManagerTest {
     }
 
     @Test
-    //Tests the smallest basic inputs between 1 and 3.
+    //Tests inputs that convert to the Roman numeral 'I'.
     public void intToRomanTestStage1(){
         int testNumber = 3;
         String expected = "III";
 
         IntegerToRoman converter = new IntegerToRoman();
         String testResult = converter.intToRomanI(testNumber);
+        assertEquals(expected, testResult);
+    }
+
+    @Test
+    public void intToRomanTestStage2(){
+        int testNumber = 5;
+        String expected = "V";
+
+        IntegerToRoman converter = new IntegerToRoman();
+        String testResult = converter.intToRomanV(testNumber);
         assertEquals(expected, testResult);
     }
 }
