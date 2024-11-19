@@ -13,8 +13,8 @@ public class InputManagerTest {
 
     @Test
     public void intToRomanTest(){
-        int testNumber = 1;
-        String expected = "I";
+        int testNumber = 3;
+        String expected = "III";
 
         InputManager converter = new InputManager();
         String testResult = converter.intToRoman(testNumber);
