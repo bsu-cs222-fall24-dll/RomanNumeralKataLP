@@ -8,6 +8,15 @@ public class IntegerToRoman {
         return false;
     }
 
+    public String intToRomanD(int numInput){
+        String romanNumeral = "";
+        while(numInput >= 500){
+            romanNumeral += "D";
+            numInput -= 500;
+        }
+        return romanNumeral;
+    }
+
     public String intToRomanC(int numInput){
         String romanNumeral = "";
         while(numInput >= 100){

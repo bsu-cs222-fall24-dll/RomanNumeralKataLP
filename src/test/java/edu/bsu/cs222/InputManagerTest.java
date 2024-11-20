@@ -65,4 +65,15 @@ public class InputManagerTest {
         String testResult = converter.intToRomanC(testNumber);
         assertEquals(expected, testResult);
     }
+
+    @Test
+    //Tests inputs that convert to the Roman numeral 'D'.
+    public void intToRomanTestStage6(){
+        int testNumber = 500;
+        String expected = "D";
+
+        IntegerToRoman converter = new IntegerToRoman();
+        String testResult = converter.intToRomanD(testNumber);
+        assertEquals(expected, testResult);
+    }
 }
