@@ -7,8 +7,8 @@ public class InputManagerTest {
     @Test
     public void inputManagerTest(){
         IntegerToRoman manager = new IntegerToRoman();
-        boolean testResult = manager.inputManager(300);
-        assertTrue(testResult,"Input was less than or equal to 3,000.");
+        boolean testResult = manager.inputManager(3000);
+        assertTrue(testResult,"Input was less than 1 or greater than 3,000.");
     }
 
     @Test
