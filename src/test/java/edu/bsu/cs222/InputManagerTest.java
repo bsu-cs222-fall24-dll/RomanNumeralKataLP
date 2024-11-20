@@ -76,4 +76,15 @@ public class InputManagerTest {
         String testResult = converter.intToRomanD(testNumber);
         assertEquals(expected, testResult);
     }
+
+    @Test
+    //Tests inputs that convert to the Roman numeral 'M'.
+    public void intToRomanTestStage7(){
+        int testNumber = 3000;
+        String expected = "MMM";
+
+        IntegerToRoman converter = new IntegerToRoman();
+        String testResult = converter.intToRomanM(testNumber);
+        assertEquals(expected, testResult);
+    }
 }
