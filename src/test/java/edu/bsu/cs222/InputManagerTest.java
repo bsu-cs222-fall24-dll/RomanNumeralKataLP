@@ -43,4 +43,15 @@ public class InputManagerTest {
         String testResult = converter.intToRomanX(testNumber);
         assertEquals(expected, testResult);
     }
+
+    @Test
+    //Tests inputs that convert to the Roman numeral 'L'.
+    public void intToRomanTestStage4(){
+        int testNumber = 50;
+        String expected = "L";
+
+        IntegerToRoman converter = new IntegerToRoman();
+        String testResult = converter.intToRomanL(testNumber);
+        assertEquals(expected, testResult);
+    }
 }
