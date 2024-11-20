@@ -54,4 +54,15 @@ public class InputManagerTest {
         String testResult = converter.intToRomanL(testNumber);
         assertEquals(expected, testResult);
     }
+
+    @Test
+    //Tests inputs that convert to the Roman numeral 'C'.
+    public void intToRomanTestStage5(){
+        int testNumber = 300;
+        String expected = "CCC";
+
+        IntegerToRoman converter = new IntegerToRoman();
+        String testResult = converter.intToRomanC(testNumber);
+        assertEquals(expected, testResult);
+    }
 }
