@@ -14,8 +14,8 @@ public class InputManagerTest {
     @Test
     //Tests inputs that convert to the Roman numeral 'I'.
     public void intToRomanTestStage1(){
-        int testNumber = 3;
-        String expected = "III";
+        int testNumber = 9;
+        String expected = "IX";
 
         IntegerToRoman converter = new IntegerToRoman();
         String testResult = converter.intToRomanI(testNumber);
@@ -23,12 +23,24 @@ public class InputManagerTest {
     }
 
     @Test
+    //Tests inputs that convert to the Roman numeral 'V'.
     public void intToRomanTestStage2(){
         int testNumber = 5;
         String expected = "V";
 
         IntegerToRoman converter = new IntegerToRoman();
         String testResult = converter.intToRomanV(testNumber);
+        assertEquals(expected, testResult);
+    }
+
+    @Test
+    //Tests inputs that convert to the Roman numeral 'X'.
+    public void intToRomanTestStage3(){
+        int testNumber = 20;
+        String expected = "XX";
+
+        IntegerToRoman converter = new IntegerToRoman();
+        String testResult = converter.intToRomanX(testNumber);
         assertEquals(expected, testResult);
     }
 }
